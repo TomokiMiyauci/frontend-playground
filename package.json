@@ -1,0 +1,29 @@
+{
+  "name": "frontend-playground",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "commit": "cz",
+    "postinstall": "husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^12.0.1",
+    "@commitlint/config-lerna-scopes": "^12.0.1",
+    "commitizen": "^4.2.3",
+    "cz-emoji": "^1.3.1",
+    "eslint": "^7.21.0",
+    "husky": "^5.1.3",
+    "prettier": "^2.2.1"
+  },
+  "workspaces": [
+    "react",
+    "vue3"
+  ],
+  "config": {
+    "commitizen": {
+      "path": "cz-emoji"
+    }
+  }
+}
