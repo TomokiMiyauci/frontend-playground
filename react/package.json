@@ -1,0 +1,29 @@
+{
+  "name": "react",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "commit": "yarn --cwd .. commit",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview",
+    "lint:script": "eslint --ext .tsx --ignore-path .gitignore ."
+  },
+  "dependencies": {
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.33",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.17.0",
+    "@typescript-eslint/parser": "^4.17.0",
+    "@vitejs/plugin-react-refresh": "^1.3.1",
+    "eslint": "^7.21.0",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "typescript": "^4.1.2",
+    "vite": "^2.0.5"
+  }
+}
