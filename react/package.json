@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "cz": "yarn --cwd .. commit",
     "commit": "yarn --cwd .. commit",
     "dev": "vite",
     "build": "tsc && vite build",
