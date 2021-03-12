@@ -8,5 +8,8 @@ export default defineConfig({
       '@': resolve(__dirname, 'src')
     }
   },
+  esbuild: {
+    jsxInject: `import React from 'react'`
+  },
   plugins: [reactRefresh()]
 })
