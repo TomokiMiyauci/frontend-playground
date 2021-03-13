@@ -9,7 +9,7 @@
     "build": "yarn build:client && yarn build:server",
     "build:client": "vite build --outDir dist/client",
     "build:server": "vite build --ssr src/entry-server.tsx --outDir dist/server",
-    "generate": "vite build --outDir dist/static && yarn build:server && esno prerender",
+    "generate": "vite build --outDir dist/static --base /react/ && yarn build:server && esno prerender",
     "serve": "cross-env NODE_ENV=production esno server",
     "lint:tsc": "tsc",
     "lint:script": "eslint --ext .tsx --ignore-path .gitignore ."
@@ -36,7 +36,6 @@
     "eslint": "^7.21.0",
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "esno": "^0.4.6",
     "express": "^4.17.1",
     "serve-static": "^1.14.1",
     "typescript": "^4.1.2",
