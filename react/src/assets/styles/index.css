@@ -1,0 +1,8 @@
+html {
+  @apply antialiased text-gray-700;
+}
+
+input,
+button {
+  @apply outline-none focus:outline-none duration-200;
+}
