@@ -7,7 +7,7 @@ import 'virtual:windi.css'
 
 hydrate(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/react">
       <App />
     </BrowserRouter>
   </StrictMode>,
